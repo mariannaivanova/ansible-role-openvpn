@@ -1,0 +1,15 @@
+galaxy_info:
+  role_name: ansible_role_openvpn
+  namespace: acme
+  author: Daria Pomazan
+  description: OpenVPN role for Ubuntu
+  company: ITMO Univeristy
+
+  license: BSD
+
+  min_ansible_version: 2.14.0
+
+  galaxy_tags: []
+
+dependencies: []
+

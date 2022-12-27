@@ -1,0 +1,23 @@
+---
+# tasks file for ansible_role_openvpn
+
+- include_tasks: ca-server-init.yaml
+
+- include_tasks: openvpn-server-init.yaml
+
+- include_tasks: ca-server-sign-server.yaml
+
+- include_tasks: opnevpn-server-copy-servers-certs.yaml
+
+- include_tasks: openvpn-server-register-clients.yaml
+
+- include_tasks: ca-server-sign-client.yaml
+
+- include_tasks: opnevpn-server-copy-client-certs.yaml
+
+- include_tasks: openvpn-server-config.yaml
+
+- include_tasks: openvpn-server-create-client-infra.yaml
+
+- include_tasks: openvpn-client.yaml
+
